@@ -1,0 +1,12 @@
+{
+  "uuid": "keylight-neo-controller@toaksoy",
+  "name": "Key Light Neo Controller",
+  "description": "Discover and control Elgato Key Light devices from the GNOME top bar.",
+  "version": 1,
+  "shell-version": [
+    "45",
+    "46",
+    "47"
+  ],
+  "url": "https://github.com/toaksoy/keylight-neo-controller"
+}

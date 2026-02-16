@@ -1,0 +1,22 @@
+# Build outputs
+dist/*
+!dist/.gitkeep
+
+# Docs
+docs/*
+!docs/.gitkeep
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Python cache (used by helper scripts)
+__pycache__/
+*.pyc
+
+# Editor/OS metadata
+.DS_Store
+.idea/
+.vscode/
