@@ -33,7 +33,6 @@ Modern GNOME Shell extension to discover and control Elgato Key Light devices di
 │       └── stylesheet.css
 ├── Makefile
 ├── docs/
-│   └── PUBLISHING.md
 ├── dist/
 ├── pack/
 │   └── README.md
@@ -86,5 +85,3 @@ journalctl --user -f /usr/bin/gnome-shell
   ```bash
   systemctl status avahi-daemon
   ```
-
-- Publishing instructions are in `docs/PUBLISHING.md`.
