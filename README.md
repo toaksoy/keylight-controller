@@ -1,6 +1,6 @@
 # Key Light Controller (GNOME Extension)
 
-Modern GNOME Shell extension to discover and control Elgato Key Light devices directly from the top bar.
+Modern and simple GNOME Shell extension to discover and control Elgato Key Light devices directly from the top bar.
 
 ![Key Light Controller menu](docs/extension.png)
 
