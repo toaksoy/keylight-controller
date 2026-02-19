@@ -44,7 +44,7 @@ import {
 export const KeyLightIndicator = GObject.registerClass(
 class KeyLightIndicator extends PanelMenu.Button {
     _init() {
-        super._init(0.0, 'Key Light Neo Controller');
+        super._init(0.0, 'Key Light Controller');
 
         this._devices = new Map();
         this._pollSourceId = 0;
@@ -547,7 +547,7 @@ class KeyLightIndicator extends PanelMenu.Button {
             );
             this._applyBrightnessVisuals(device, brightness);
             const normalizedBrightness = Math.round((brightness / Math.max(1, device.brightnessMax)) * 100);
-            device.brightnessLabel.text = `Luminescence ${normalizedBrightness}%`;
+            device.brightnessLabel.text = `Brightness ${normalizedBrightness}%`;
             this._debounceDeviceUpdate(device.id, 'brightness', brightness);
         });
 
@@ -770,7 +770,7 @@ class KeyLightIndicator extends PanelMenu.Button {
         device.suppressUiEvents = false;
 
         const normalizedBrightness = Math.round((brightness / brightnessMax) * 100);
-        device.brightnessLabel.text = `Luminescence ${normalizedBrightness}%`;
+        device.brightnessLabel.text = `Brightness ${normalizedBrightness}%`;
         device.temperatureLabel.text = `Temperature ${kelvin}K`;
         this._applyBrightnessVisuals(device, brightness);
         this._applyTemperatureVisuals(device, kelvin);

@@ -5,7 +5,7 @@ import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
 import {KeyLightIndicator} from './keyLightIndicator.js';
 
-export default class KeyLightNeoExtension {
+export default class KeyLightControllerExtension {
     constructor(metadata) {
         this.uuid = metadata.uuid;
         this._stylesheetFile = null;

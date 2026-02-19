@@ -51,12 +51,13 @@ install-local: validate
 
 build: validate
 	@mkdir -p "$(DIST_DIR)"
+	@rm -f "$(ARCHIVE)"
 	@tmp_dir="$$(mktemp -d)"; \
 	trap 'rm -rf "$$tmp_dir"' EXIT; \
-	stage_dir="$$tmp_dir/$(UUID)"; \
+	stage_dir="$$tmp_dir/stage"; \
 	mkdir -p "$$stage_dir"; \
 	for file in $(EXTENSION_FILES); do cp "$$file" "$$stage_dir/$$(basename "$$file")"; done; \
-	(cd "$$tmp_dir" && zip -rq "$(CURDIR)/$(ARCHIVE)" "$(UUID)"); \
+	(cd "$$stage_dir" && zip -rq "$(CURDIR)/$(ARCHIVE)" .); \
 	echo "Created $(ARCHIVE)"
 
 clean:

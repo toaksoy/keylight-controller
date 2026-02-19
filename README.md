@@ -6,10 +6,14 @@ Modern GNOME Shell extension to discover and control Elgato Key Light devices di
 
 - Auto-discovery on your LAN (Avahi + fallback probes)
 - Power toggle
-- Luminescence slider with device-aware max brightness
+- Brightness slider with device-aware max brightness
 - Temperature slider with device-safe value clamping
 - Live slider label/color feedback while dragging
 - Per-device details panel (IP, MAC, serial, firmware, hardware data)
+
+## Screenshot
+
+![Key Light Controller menu](docs/extension.png)
 
 ## Requirements
 
@@ -56,7 +60,7 @@ Restart GNOME Shell:
 Enable extension:
 
 ```bash
-gnome-extensions enable keylight-neo-controller@toaksoy
+gnome-extensions enable keylight-controller@toaksoy
 ```
 
 ## Build and validate
@@ -72,8 +76,8 @@ Output archive is created in `dist/`.
 
 ```bash
 gnome-extensions list | rg keylight
-gnome-extensions disable keylight-neo-controller@toaksoy
-gnome-extensions enable keylight-neo-controller@toaksoy
+gnome-extensions disable keylight-controller@toaksoy
+gnome-extensions enable keylight-controller@toaksoy
 journalctl --user -f /usr/bin/gnome-shell
 ```
 

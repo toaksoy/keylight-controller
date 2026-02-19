@@ -5,6 +5,7 @@ dist/*
 # Docs
 docs/*
 !docs/.gitkeep
+!docs/extension.png
 
 # Logs and temp files
 *.log
